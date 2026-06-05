@@ -14,7 +14,11 @@ Estrutura mínima: apenas **rotas** e **controllers** (sem testes).
 
 ```bash
 npm install
-cp .env.example .env   # preencha as variáveis
-npx prisma migrate dev
+cp .env.example .env          # preencha GITHUB_CLIENT_ID/SECRET e JWT_SECRET
+docker compose up -d          # sobe Postgres em localhost:5432
+npx prisma migrate dev        # cria as tabelas
 npm run dev
 ```
+
+Para derrubar o banco: `docker compose down` (mantém os dados).
+Para apagar tudo: `docker compose down -v`.
