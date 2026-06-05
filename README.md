@@ -2,7 +2,7 @@
 
 Backend do **SiNutre — Sistema de Ingestão de Macronutrientes**.
 
-Stack: **TypeScript + Express + Prisma + PostgreSQL**.
+Stack: **TypeScript + Express + Prisma + SQLite**.
 
 > Versão didática usada em aula. Por enquanto cobre apenas:
 > - Login via GitHub OAuth
@@ -15,10 +15,9 @@ Estrutura mínima: apenas **rotas** e **controllers** (sem testes).
 ```bash
 npm install
 cp .env.example .env          # preencha GITHUB_CLIENT_ID/SECRET e JWT_SECRET
-docker compose up -d          # sobe Postgres em localhost:5432
-npx prisma migrate dev        # cria as tabelas
+npx prisma migrate dev        # cria prisma/dev.db e aplica as tabelas
 npm run dev
 ```
 
-Para derrubar o banco: `docker compose down` (mantém os dados).
-Para apagar tudo: `docker compose down -v`.
+O banco é um único arquivo em `prisma/dev.db` (ignorado pelo git). Para zerar,
+basta apagar o arquivo e rodar `npx prisma migrate dev` de novo.
