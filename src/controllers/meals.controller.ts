@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { prisma } from '../prisma';
-// import { MEAL_CHOICES, type MealChoice } from '../constants/enums';
+import { MEAL_CHOICES, type MealChoice } from '../constants/enums';
 
 
 export async function meals(
@@ -62,6 +62,7 @@ export async function meals(
     return {
       id: meal.id,
       name: meal.description,
+      type: meal.type,
       createdAt: meal.createdAt,
 
       totals,
