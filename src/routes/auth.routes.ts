@@ -2,7 +2,6 @@ import { Router } from 'express';
 import { requireAuth } from '../middlewares/auth.middleware';
 import { me } from '../controllers/auth.me';
 
-
 import {
   redirectToGithub,
   githubCallback,

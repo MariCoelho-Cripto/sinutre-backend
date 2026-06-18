@@ -16,4 +16,4 @@ app.get('/health', (_req, res) => {
 
 app.use('/auth', authRoutes);
 app.use('/meals', mealsRoutes);
-app.use('/foods', foodRouter);
+app.use('/foods', foodRouter)

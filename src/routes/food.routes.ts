@@ -4,27 +4,23 @@ import { prisma } from '../prisma';
 
 export const foodRouter = Router();
 
-
+//foods/
 foodRouter.get('/', requireAuth, async (req, res) => {
   const search = String(req.query.search ?? '');
-
   const foods = await prisma.food.findMany({
     where: {
       userId: req.userId,
-
       name: {
         contains: search,
-      },
+      }
     },
-
     take: 10,
-
     orderBy: {
       name: 'asc',
     },
   });
 
-  res.json(foods);
+  return res.json(foods);
 });
 
 
@@ -50,4 +46,3 @@ foodRouter.post('/', requireAuth, async (req, res) => {
 
   return res.status(201).json(food);
 });
-
