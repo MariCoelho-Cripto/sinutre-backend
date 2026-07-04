@@ -14,7 +14,10 @@ app.get('/health', (_req, res) => {
   res.json({ status: 'ok' });
 });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c34bea4a2e4c76e3df2d3ae05645614ed80cc1b6
 app.use('/auth', authRoutes);
 app.use('/meals', mealsRoutes);
 app.use('/foods', foodRouter)
