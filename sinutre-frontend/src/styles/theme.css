@@ -5,15 +5,16 @@
   color-scheme: light;
 
   --color-base-100: oklch(100% 0 0);
-  --color-base-200: oklch(98% 0.01 350);
-  --color-base-300: oklch(94% 0.02 340); 
-  --color-base-content: oklch(20% 0.05 340);
+  --color-base-200: oklch(96% 0.005 240);
+  --color-base-300: oklch(92% 0.01 240); 
+  --color-base-content: oklch(20% 0.02 240);
 
-  --color-primary: oklch(60% 0.25 350);
-  --color-secondary: oklch(70% 0.2 340);
-  --color-secondary-content: oklch(98% 0.01 160);
-  --color-accent: oklch(50% 0.3 360);
-  --color-accent-content: oklch(20% 0.03 145);
+  --color-primary: oklch(65% 0.15 175);    /* Verde água */
+  --color-primary-content: oklch(98% 0.01 175);
+  --color-secondary: oklch(72% 0.12 178);  /* Verde água mais claro */
+  --color-secondary-content: oklch(20% 0.02 178);
+  --color-accent: oklch(55% 0.18 172);     /* Verde água mais escuro */
+  --color-accent-content: oklch(98% 0.01 172);
   --color-neutral: oklch(30% 0.04 150);
   --color-neutral-content: oklch(96% 0.01 150);
 
