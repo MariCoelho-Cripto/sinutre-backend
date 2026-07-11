@@ -59,9 +59,7 @@
     "@types/node": "^22.10.2",
     "prisma": "^5.22.0",
     "tsx": "^4.19.2",
-    "typescript": "^5.7.2",
-    
-    c34bea4a2e4c76e3df2d3ae05645614ed80cc1b6
+    "typescript": "^5.7.2"
     
   }
 }
