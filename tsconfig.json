@@ -1,36 +1,35 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
     "target": "ES2020",
     "module": "Node16",
     "lib": ["ES2020", "DOM"],
     "moduleResolution": "Node16",
     "outDir": "./dist",
     "rootDir": "./src",
-=======
+
     "target": "ES2022",
     "module": "commonjs",
     "moduleResolution": "node",
     "lib": ["ES2022"],
     "outDir": "dist",
     "rootDir": "src",
->>>>>>> c34bea4a2e4c76e3df2d3ae05645614ed80cc1b6
+
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-<<<<<<< HEAD
+
     "types": ["node"]
-  },
+  }, 
+    
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "dist"],
+
+  "declaration": false,
+  "sourceMap": true,
+
+
 }
-=======
-    "declaration": false,
-    "sourceMap": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
-}
->>>>>>> c34bea4a2e4c76e3df2d3ae05645614ed80cc1b6
+
+
